@@ -1,5 +1,5 @@
 #region declarations
-$Domain = Get-AutomationVariable -Name "SCM_Domain"
+$Domain = Get-AutomationVariable -Name "Domain_Complete"
 $Script:tenantDomain = Get-AutomationVariable -Name $Domain #please endter the defualt domain of the tenant the managed identity belongs to.
 #endregion declarations
 

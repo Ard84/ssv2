@@ -4,7 +4,6 @@ $PasswordExpirationRules_Enabled = Get-AutomationVariable -Name "PasswordExpirat
 #Enable MFA Policies
 if($PasswordExpirationRules_Enabled -Like "Yes") {
   $cred = Get-AutomationPSCredential -Name "MSOL"
-  Connect-AzureAD -Credential $cred
   Connect-MsolService -Credential $cred
 
 	Write-Verbose 'Setting all 365 user passwords to Never Expire' -Verbose

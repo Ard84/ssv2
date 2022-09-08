@@ -8,7 +8,7 @@ Connect-IPPSSession -CertificateThumbPrint $connection.CertificateThumbprint –
 #Automation Variables
 $Clientdlp = Get-DlpPolicy
 $Domain = Get-AutomationVariable -Name "SCM_Domain"
-$DLPRules_Enabled = Get-AutomationVariable -Name "DLP_Rules"
+$DLPRules_Enabled = Get-AutomationVariable -Name "DLPRules_Enabled"
 $DLPRules_Selection = Get-AutomationVariable -Name "DLPRules_Selection"
 $DLPRules_DeploymentMode = "AuditandNotify"
 
